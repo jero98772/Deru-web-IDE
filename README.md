@@ -1,6 +1,8 @@
-# deruuk (progress)
+# Deruuk 
 
 this is a lisp dialect act like programing langue in deutche sprech, Русский язык and Українська мова
+
+see [https://github.com/jero98772/Deruuk](https://github.com/jero98772/Deruuk)
 
 
 ### examples
@@ -60,4 +62,4 @@ https://github.com/fluentpython/lispy
 
 https://norvig.com/lispy.html
 
-https://github.com/kanaka/mal
+https://github.com/kanaka/mal  <- very important i get most of the code from here
