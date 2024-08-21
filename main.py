@@ -31,6 +31,7 @@ async def execute_code(request: CodeRequest):
         out=""
         code=request.code.split("\n")
         for i in code:
+            print(i)
             out+=REP(i)+"\n"
         return {"output":out , "error":""}#{"output": result.stdout, "error": result.stderr}
     except subprocess.CalledProcessError as e:
