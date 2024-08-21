@@ -7,10 +7,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
     <style>
-        body { font-family: Arial, sans-serif; }
-        .CodeMirror { height: 300px; }
-        #output { white-space: pre; margin-top: 20px; }
+        /* Starry background */
+        body {
+            font-family: 'Orbitron', sans-serif; /* Space-themed font */
+            background: black;
+            color: #00FF00; /* Green text color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+        }
+
+        /* Header styling */
+        h1 {
+            margin-top: 20px;
+            font-size: 3rem;
+            text-shadow: 0 0 50px #00FF00, 0 0 1px #00FF00;
+            color: #00FF00;
+        }
+
+        /* CodeMirror editor styling */
+        .CodeMirror {
+            height: 300px;
+            width: 90%;
+            max-width: 800px;
+            margin-top: 20px;
+            border: 1px solid #00FF00;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Button styling */
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            background: #00FF00;
+            color: #000;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+            box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
+        }
+
+        button:hover {
+            box-shadow: 0 0 20px #00FF00, 0 0 40px #00FF00;
+            transform: translateY(-3px);
+        }
+
+        /* Output styling */
+        #output {
+            white-space: pre-wrap;
+            margin-top: 20px;
+            padding: 15px;
+            width: 90%;
+            max-width: 800px;
+            background-color: #1e1e1e;
+            border: 1px solid #00FF00;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            overflow-y: auto;
+            max-height: 200px;
+            color: #00FF00;
+        }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Deruuk IDE</h1>
@@ -24,7 +90,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchbrackets.min.js"></script>
     <script>
         const editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
-            mode: 'clojure', // Use Clojure mode for Lisp syntax highlighting
+            mode: 'clojure',
             theme: 'dracula',
             lineNumbers: true,
             autoCloseBrackets: true,

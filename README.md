@@ -4,6 +4,14 @@ this is a lisp dialect act like programing langue in deutche sprech, Русск�
 
 see [https://github.com/jero98772/Deruuk](https://github.com/jero98772/Deruuk)
 
+	pip install 'uvicorn[standard]'
+	pip install fastapi
+
+run
+
+	uvicorn main:app --host 0.0.0.0 --port 8651
+
+
 
 ### examples
 4 ways to do hello
