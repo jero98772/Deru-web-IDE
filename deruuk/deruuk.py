@@ -200,7 +200,7 @@ ns = {
         '>':  lambda a,b: a>b,
         '>=': lambda a,b: a>=b,
         '+':  lambda *x: sum(x),
-        '-':  lambda *x: sum(x)*-1,
+        '-':  lambda a,b: a-b,
         '*':  lambda *z: functools.reduce((lambda x, y: x * y), z),
         '/':  lambda a,b: int(a/b),
         '%':  lambda a,b: int(a%b),
