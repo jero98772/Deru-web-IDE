@@ -1,4 +1,4 @@
-import deruuk.mal_types as types
+import deru.mal_types as types
 
 def _escape(s):
     return s.replace('\\', '\\\\').replace('"', '\\"').replace('\n', '\\n')

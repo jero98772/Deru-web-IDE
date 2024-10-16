@@ -1,5 +1,5 @@
 import re
-from deruuk.mal_types import (_symbol, _keyword, _list, _vector, _hash_map, _s2u, _u)
+from deru.mal_types import (_symbol, _keyword, _list, _vector, _hash_map, _s2u, _u)
 
 class Blank(Exception): pass
 

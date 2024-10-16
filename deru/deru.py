@@ -1,6 +1,3 @@
-
-#from deruuk import tokenize,atom,read_from_tokens
-
 import functools
 import sys, traceback
 
@@ -10,11 +7,10 @@ from itertools import chain
 import re
 import os, sys, readline as pyreadline
 
-from deruuk import reader,printer
-from deruuk  import mal_types as types
-#from deruuk.mal_types  import *  
+from deru import reader,printer
+from deru  import mal_types as types
 
-from deruuk.mal_types import MalException, List, Vector
+from deru.mal_types import MalException, List, Vector
 
 # Environment
 

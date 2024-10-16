@@ -3,7 +3,7 @@ from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 import subprocess
 import os
-from deruuk.deruuk import REP
+from deru.deru import REP
 app = FastAPI()
 
 class CodeRequest(BaseModel):
