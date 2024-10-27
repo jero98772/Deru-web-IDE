@@ -6,7 +6,6 @@ Deru is a Lisp dialect designed to support programming in German (Deutsche Sprac
 Lisp (LISt Processing) is one of the oldest programming languages, known for its simple syntax and powerful macro system. It's particularly well-suited for symbolic computation and artificial intelligence applications. Deruuk aims to bring this powerful language into a multilingual context.
 
 	pip install 'uvicorn[standard]' fastapi
-	pip install fastapi
 
 run
 
